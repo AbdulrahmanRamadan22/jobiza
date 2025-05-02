@@ -1,0 +1,86 @@
+name: jobes
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.0
+
+  # UI Components
+  another_stepper: ^1.2.2
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  lottie: ^3.3.1
+  pin_code_fields: ^8.0.1
+  smooth_page_indicator: ^1.2.0+3
+
+  # Networking
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
+
+  # Storage & Security
+  flutter_secure_storage: ^9.2.4
+  shared_preferences: ^2.5.3
+
+  # Dependency Injection
+  get_it: ^8.0.3
+
+  # Serialization
+  freezed: ^2.5.7
+  freezed_annotation: ^2.4.4
+  freezed_result: ^1.0.3+1
+  json_annotation: ^4.9.0
+
+  # Debugging
+  pretty_dio_logger: ^1.4.0
+
+dev_dependencies:
+  # Testing
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code Generation
+  build_runner: ^2.4.15
+  json_serializable: ^6.9.4
+  retrofit_generator: ^9.1.9
+
+  # App Branding
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/lottie/
+    - assets/fonts/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon_app.png"
+  adaptive_icon_background: "#FFFFFF"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_logo.png
